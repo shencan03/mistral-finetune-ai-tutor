@@ -45,3 +45,7 @@ build/
 
 # Ensure .venv is ignored
 .venv/ 
+
+# Node.js / Prettier
+node_modules/
+package-lock.json

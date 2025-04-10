@@ -1,0 +1,20 @@
+{
+  "prompt": "Soru: Kuvvet nedir?\nCevap:",
+  "output": "Kuvvet, bir cismin hareket durumunu değiştirebilen etkidir. Birim olarak Newton (N) ile ölçülür."
+}
+{
+  "prompt": "Soru: Bir cismin hızı nasıl değişir?\nCevap:",
+  "output": "Bir cismin hızı, üzerine etki eden net kuvvet sonucunda değişir. Net kuvvetin yönü ve büyüklüğü, hızın değişim yönünü belirler."
+}
+{
+  "prompt": "Soru: Enerji nedir?\nCevap:",
+  "output": "Enerji, iş yapabilme yeteneğidir. Farklı türleri vardır: kinetik enerji, potansiyel enerji, ısı enerjisi, elektriksel enerji gibi."
+}
+{
+  "prompt": "Soru: Basit makinelerin avantajı nedir?\nCevap:",
+  "output": "Basit makineler, uygulanan kuvvetin yönünü veya büyüklüğünü değiştirerek işi daha kolay yapmamıza yardımcı olur."
+}
+{
+  "prompt": "Soru: İvme ile kuvvet arasında nasıl bir ilişki vardır?\nCevap:",
+  "output": "İvme, uygulanan net kuvvetle doğru orantılıdır ve kütle ile ters orantılıdır. Bu ilişki Newton'un ikinci yasası ile açıklanır: F = m * a."
+}
