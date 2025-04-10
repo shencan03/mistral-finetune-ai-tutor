@@ -90,10 +90,8 @@ print("✅ Dataset loaded:", len(dataset), "samples")
 print("✅ Tokenizer loaded:", tokenizer.__class__.__name__)
 print("✅ Model ready for fine-tuning (LoRA + 4bit)")
 
-exit()  # ⛔ Prevents training for now. Remove this line when ready to run training.
 
-# ↓↓↓ Uncomment below to run training for real ↓↓↓
-# trainer.train()
-# trainer.model.save_pretrained(OUTPUT_DIR)
-# tokenizer.save_pretrained(OUTPUT_DIR)
-# print("\n✅ Fine-tuning complete!")
+trainer.train()
+trainer.model.save_pretrained(OUTPUT_DIR)
+tokenizer.save_pretrained(OUTPUT_DIR)
+print("\n✅ Fine-tuning complete!")
