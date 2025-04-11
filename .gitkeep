@@ -1,0 +1,2 @@
+echo "# local mistral model folder" > models/Mistral-7B-v0.1/.gitkeep
+git add models/Mistral-7B-v0.1/.gitkeep
