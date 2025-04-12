@@ -1,6 +1,5 @@
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
-from bitsandbytes.configs import BitsAndBytesConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig    
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -9,13 +8,14 @@ bnb_config = BitsAndBytesConfig(
 )
 
 model = AutoModelForCausalLM.from_pretrained(
-    "mistralai/Mistral-7B-v0.1",
-    quantization_config=bnb_config,
-    device_map="auto",
-    torch_dtype=torch.float16
+    "models/Mistral-7B-v0.1",
+    torch_dtype=torch.float16,
+    device_map="auto"
 )
 
-tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-v0.1")
+tokenizer = AutoTokenizer.from_pretrained(
+    "models/Mistral-7B-v0.1"
+)
 
 inputs = tokenizer("Merhaba! Bu bir testtir.", return_tensors="pt").to(model.device)
 outputs = model.generate(**inputs, max_new_tokens=50)

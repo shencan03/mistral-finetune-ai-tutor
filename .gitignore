@@ -49,3 +49,5 @@ build/
 # Node.js / Prettier
 node_modules/
 package-lock.json
+
+models/Mistral-7B-v0.1/
